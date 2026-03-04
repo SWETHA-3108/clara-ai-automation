@@ -8,7 +8,7 @@ Clara AI is a robust, version-controlled automation system designed to transform
 
 The system follows a modular, mini-SaaS backend architecture to ensure scalability, reproducibility, and strict data integrity.
 
-### System Diagram (ASCII)
+### System Diagram 
 ```text
   [ CORE ARCHITECTURE ]
   
