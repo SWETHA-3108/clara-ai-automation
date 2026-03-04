@@ -5,6 +5,10 @@
     From: Monday through Friday, 8 AM to 5 PM
     To:   Monday to Friday, 8 AM to 5 PM Eastern
 
+- office_address:
+    From: 4500 Commerce Way, North Plainfield
+    To:   4500 Commerce Way
+
 - emergency_definition:
     From: sprinkler leaks and fire alarm panels triggering unexpectedly
     To:   routing is to transfer to our dispatch technician at extension 55

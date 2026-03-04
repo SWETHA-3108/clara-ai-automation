@@ -5,6 +5,10 @@
     From: Monday through Friday, 7 AM to 6 PM
     To:   Monday to Friday, 7 AM to 6 PM Central
 
+- office_address:
+    From: 789 Cooling Lane, Dallas, Texas
+    To:   789 Cooling Lane
+
 - emergency_definition:
     From: repairs
     To:   routing is to transfer directly to the on-call technician at 555-0199

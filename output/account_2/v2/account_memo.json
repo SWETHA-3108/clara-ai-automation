@@ -2,12 +2,12 @@
     "account_id": "account_2",
     "company_name": "CoolAir HVAC Services",
     "business_hours": "Monday to Friday, 7 AM to 6 PM Central",
-    "office_address": "789 Cooling Lane, Dallas, Texas",
+    "office_address": "789 Cooling Lane",
     "services_supported": [
         "Facility Maintenance"
     ],
     "emergency_definition": "routing is to transfer directly to the on-call technician at 555-0199",
-    "emergency_routing_rules": "Direct to on-call technician",
+    "emergency_routing_rules": "to transfer directly to the on-call technician at 555-0199",
     "non_emergency_routing_rules": null,
     "call_transfer_rules": "before fallback",
     "integration_constraints": "None mentioned",

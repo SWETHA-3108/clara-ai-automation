@@ -7,7 +7,7 @@
 
 - office_address:
     From: 202 Voltage Road, Seattle
-    To:   Address at 202 Voltage Road
+    To:   202 Voltage Road and our business hours are Monday to Friday, 9 AM to 5 PM Pacific
 
 - emergency_definition:
     From: power outages in commercial buildings or exposed electrical wiring

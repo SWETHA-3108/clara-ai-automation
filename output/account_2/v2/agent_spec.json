@@ -7,7 +7,7 @@
         "caller_number",
         "purpose_of_call"
     ],
-    "transfer_protocol": "Transfer according to: Direct to on-call technician",
+    "transfer_protocol": "Transfer according to: to transfer directly to the on-call technician at 555-0199",
     "fallback_protocol": "Timeout after: before fallback",
     "version": "v2"
 }

@@ -122,13 +122,13 @@ class MockLLMService:
     def extract_onboarding_v2(self, text: str, current_memo: AccountMemo, current_spec: AgentSpec) -> tuple[AccountMemo, AgentSpec]:
         new_memo = current_memo.model_copy()
         
-        # Update fields with improved heuristics
-        new_memo.business_hours = self._extract_value(text, ["business hours", "hours are"], current_memo.business_hours)
-        new_memo.office_address = self._extract_value(text, ["address at", "located at"], current_memo.office_address)
+        # Update fields with improved heuristics and expanded keywords
+        new_memo.business_hours = self._extract_value(text, ["business hours", "hours are", "open from"], current_memo.business_hours)
+        new_memo.office_address = self._extract_value(text, ["address at", "located at", "address is"], current_memo.office_address)
         new_memo.emergency_definition = self._extract_value(text, ["emergency"], current_memo.emergency_definition)
-        new_memo.emergency_routing_rules = self._extract_value(text, ["routed", "transfer to"], "Direct to on-call technician")
-        new_memo.call_transfer_rules = self._extract_value(text, ["seconds", "timeout"], "45 seconds before fallback")
-        new_memo.integration_constraints = self._extract_value(text, ["ServiceTrade", "integration"], "None mentioned")
+        new_memo.emergency_routing_rules = self._extract_value(text, ["routed", "transfer to", "routing is"], "Direct to on-call technician")
+        new_memo.call_transfer_rules = self._extract_value(text, ["seconds", "timeout", "wait before"], "45 seconds before fallback")
+        new_memo.integration_constraints = self._extract_value(text, ["ServiceTrade", "integration", "constraint"], "None mentioned")
         
         new_memo.after_hours_flow_summary = "Emergencies go to on-call. Everything else is a message."
         new_memo.questions_or_unknowns = []

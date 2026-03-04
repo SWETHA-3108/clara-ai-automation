@@ -5,6 +5,10 @@
     From: 8 AM to 6 PM, Monday through Friday
     To:   Monday to Friday, 8 AM to 6 PM
 
+- office_address:
+    From: 123 Industrial Way, Suite 500, North Plainfield
+    To:   123 Industrial Way
+
 - emergency_definition:
     From: system
     To:   routing is to transfer to our on-call tech at extension 101

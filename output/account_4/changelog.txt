@@ -5,6 +5,10 @@
     From: Monday through Friday, 8 AM to 4 PM
     To:   Monday to Friday, 8 AM to 4 PM Eastern
 
+- office_address:
+    From: 505 Flow Street, Orlando
+    To:   505 Flow Street and our business hours are Monday to Friday, 8 AM to 4 PM Eastern
+
 - emergency_definition:
     From: repairs
     To:   routing is to transfer to on-call technician at 555-0200
