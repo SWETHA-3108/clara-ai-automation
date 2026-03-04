@@ -3,8 +3,8 @@ import os
 from deepdiff import DeepDiff
 from .schemas import AccountMemo, AgentSpec
 
+# Saves versioned configurations to the output directory
 def save_version(account_id: str, version: str, memo: AccountMemo, spec: AgentSpec, output_dir: str = "output"):
-    """Saves the AccountMemo and AgentSpec to the correct version folder."""
     base_path = os.path.join(output_dir, account_id, version)
     os.makedirs(base_path, exist_ok=True)
     
@@ -14,8 +14,8 @@ def save_version(account_id: str, version: str, memo: AccountMemo, spec: AgentSp
     with open(os.path.join(base_path, "agent_spec.json"), "w") as f:
         json.dump(spec.model_dump(), f, indent=4)
 
+# Loads a specific version of a configuration
 def load_version(account_id: str, version: str, output_dir: str = "output") -> tuple[AccountMemo, AgentSpec]:
-    """Loads a specific version of Memo and Spec."""
     base_path = os.path.join(output_dir, account_id, version)
     
     with open(os.path.join(base_path, "account_memo.json"), "r") as f:
@@ -26,8 +26,8 @@ def load_version(account_id: str, version: str, output_dir: str = "output") -> t
         
     return AccountMemo(**memo_data), AgentSpec(**spec_data)
 
+# Compares v1 and v2 to generate a human-readable changelog
 def generate_changelog(account_id: str, v1_memo: AccountMemo, v2_memo: AccountMemo, output_dir: str = "output"):
-    """Compares v1 to v2 and writes a changelog."""
     diff = DeepDiff(v1_memo.model_dump(), v2_memo.model_dump(), ignore_order=True)
     
     changelog_path = os.path.join(output_dir, account_id, "changelog.txt")

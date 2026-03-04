@@ -1,10 +1,7 @@
 from typing import List, Optional, Literal, Dict, Any
 from pydantic import BaseModel, Field
 
-# ==========================================
-# Schema for Stage 1 & 2 Output (Account Memo)
-# ==========================================
-
+# Model for storing account details and requirements
 class AccountMemo(BaseModel):
     account_id: str = Field(..., description="Unique ID for the account")
     company_name: Optional[str] = Field(None, description="Name of the company")
@@ -21,10 +18,7 @@ class AccountMemo(BaseModel):
     questions_or_unknowns: List[str] = Field(default_factory=list, description="Missing information or questions for the client")
     notes: Optional[str] = Field(None, description="Extra notes")
 
-# ==========================================
-# Schema for Stage 1 & 2 Output (Agent Spec)
-# ==========================================
-
+# Model for defining the AI agent's behavior and protocols
 class AgentSpec(BaseModel):
     agent_name: str = Field(..., description="Name of the voice agent")
     voice_style: str = Field(..., description="Tone and style of the voice agent")

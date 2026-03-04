@@ -2,16 +2,8 @@ import json
 from .schemas import AccountMemo, AgentSpec
 
 class MockLLMService:
-    """
-    A zero-cost templating extraction engine (acting as the LLM) based on strict prompts.
-    It simulates exact structured output creation without paid LLM calls.
-    """
-    
+    # Generates system prompts following the project rubric
     def _generate_system_prompt(self, is_demo: bool) -> str:
-        """
-        Generates the strict system prompt logic required by the rubric for Clara Voice Agent.
-        Does NOT mention 'function calls' and strictly abides by conversational hygiene.
-        """
         prompt = "## Voice Agent Behavior & Calling Hygiene\n"
         prompt += "- Never use technical jargon or mention 'function calls' to the caller.\n"
         prompt += "- Do not ask unnecessary questions. Collect only the details needed for routing.\n\n"
@@ -26,7 +18,7 @@ class MockLLMService:
         prompt += "7. Close call: End politely.\n\n"
         
         if not is_demo:
-             # Onboarding clarifies after-hours fully
+             # Onboarding flow includes after-hours logic
              prompt += "## After Hours Flow\n"
              prompt += "1. Greeting: State that the office is currently closed.\n"
              prompt += "2. Ask purpose: Are you calling to report an emergency or schedule routine service?\n"
@@ -40,18 +32,16 @@ class MockLLMService:
              
         return prompt
 
+    # Helper function to extract specific lines from transcripts
     def _extract_value(self, text: str, keywords: list[str], fallback: str) -> str:
-        """Helper to extract a line containing keywords."""
         for line in text.split("\n"):
             if any(kw.lower() in line.lower() for kw in keywords):
-                # Clean up "Client: ..." or "Specialist: ..." prefixes
                 clean_line = line.split(":", 1)[-1].strip() if ":" in line else line.strip()
                 return clean_line
         return fallback
 
+    # Extracts initial data from demo session
     def extract_demo_v1(self, text: str, account_id: str) -> tuple[AccountMemo, AgentSpec]:
-        """Simulates LLM extraction for Stage 1 (Demo Call)."""
-        # Heuristic extraction
         company_name = self._extract_value(text, ["called", "name is", "company is"], f"Account {account_id}")
         business_hours = self._extract_value(text, ["business hours", "open from", "office hours"], "Unknown - Need to clarify")
         emergency_def = self._extract_value(text, ["emergency", "urgent"], "To be defined during onboarding")
@@ -77,11 +67,11 @@ class MockLLMService:
         
         return memo, spec
 
+    # Refines data during onboarding session
     def extract_onboarding_v2(self, text: str, current_memo: AccountMemo, current_spec: AgentSpec) -> tuple[AccountMemo, AgentSpec]:
-        """Simulates LLM extraction for Stage 2 (Onboarding Call). Updates v1 with specific constraints."""
         new_memo = current_memo.model_copy()
         
-        # Heuristic extraction
+        # Update fields with onboarding details
         new_memo.business_hours = self._extract_value(text, ["business hours", "hours are"], current_memo.business_hours)
         new_memo.emergency_definition = self._extract_value(text, ["emergency"], current_memo.emergency_definition)
         new_memo.emergency_routing_rules = self._extract_value(text, ["routed", "transfer to"], "Direct to on-call technician")
@@ -89,11 +79,11 @@ class MockLLMService:
         new_memo.integration_constraints = self._extract_value(text, ["ServiceTrade", "constraint"], "None mentioned")
         
         new_memo.after_hours_flow_summary = "Emergencies go to on-call. Everything else is a message."
-        new_memo.questions_or_unknowns = [] # Resolved
+        new_memo.questions_or_unknowns = []
         
         new_spec = current_spec.model_copy()
         new_spec.version = "v2"
-        new_spec.system_prompt = self._generate_system_prompt(is_demo=False) # Includes after-hours flow
+        new_spec.system_prompt = self._generate_system_prompt(is_demo=False)
         new_spec.transfer_protocol = f"Transfer according to: {new_memo.emergency_routing_rules}"
         new_spec.fallback_protocol = f"Timeout after: {new_memo.call_transfer_rules}"
         
