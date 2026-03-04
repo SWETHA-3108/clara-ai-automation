@@ -1,13 +1,13 @@
 {
     "account_id": "account_5",
-    "company_name": "Account account_5",
-    "business_hours": "Unknown - Need to clarify",
-    "office_address": null,
+    "company_name": "Apex Facility Maintenance",
+    "business_hours": "8 AM to 6 PM, Monday through Friday",
+    "office_address": "123 Industrial Way, Suite 500, North Plainfield",
     "services_supported": [
-        "Service Requests",
+        "Facility Maintenance",
         "Inspections"
     ],
-    "emergency_definition": "Maintenance requests, inspection bookings, and sometimes urgent building issues.",
+    "emergency_definition": "system",
     "emergency_routing_rules": null,
     "non_emergency_routing_rules": null,
     "call_transfer_rules": null,
@@ -15,7 +15,6 @@
     "after_hours_flow_summary": null,
     "office_hours_flow_summary": null,
     "questions_or_unknowns": [
-        "Confirm exact business hours",
         "Confirm emergency routing details"
     ],
     "notes": null

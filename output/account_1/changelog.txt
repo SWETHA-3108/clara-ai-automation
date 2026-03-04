@@ -2,13 +2,12 @@
 
 --- Values Changed ---
 - business_hours:
-    From: And what happens outside of office hours?
-    To:   What are your business hours?
+    From: Monday through Friday, 8 AM to 5 PM
+    To:   Monday to Friday, 8 AM to 5 PM Eastern
 
 - emergency_definition:
-    From: That makes sense. So what would you consider an emergency situation?
-    To:   What counts as an emergency?
+    From: sprinkler leaks and fire alarm panels triggering unexpectedly
+    To:   routing is to transfer to our dispatch technician at extension 55
 
 --- List Items Removed ---
-- root['questions_or_unknowns'][0]: Confirm exact business hours
-- root['questions_or_unknowns'][1]: Confirm emergency routing details
+- root['questions_or_unknowns'][0]: Confirm emergency routing details

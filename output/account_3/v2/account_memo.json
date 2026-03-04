@@ -1,14 +1,13 @@
 {
     "account_id": "account_3",
-    "company_name": "Account account_3",
-    "business_hours": "Business hours?",
-    "office_address": null,
+    "company_name": "BrightLine Electrical Contractors",
+    "business_hours": "Monday to Friday, 9 AM to 5 PM Pacific",
+    "office_address": "Address at 202 Voltage Road",
     "services_supported": [
-        "Service Requests",
         "Inspections"
     ],
-    "emergency_definition": "Let\u2019s confirm your emergency handling.",
-    "emergency_routing_rules": "Transfer to the emergency line.",
+    "emergency_definition": "routing should be a transfer to the emergency line extension 9",
+    "emergency_routing_rules": "the emergency line extension 9",
     "non_emergency_routing_rules": null,
     "call_transfer_rules": "45 seconds before fallback",
     "integration_constraints": "None mentioned",

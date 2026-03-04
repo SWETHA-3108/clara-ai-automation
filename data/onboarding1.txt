@@ -1,23 +1,23 @@
-Implementation Specialist: Thanks for joining the onboarding session. Let’s finalize your configuration.
+Implementation Specialist: Let's finalize the configuration for Metro Fire Protection.
 
-Client: Sounds good.
+Client: Sounds good. We are ready for Metro Fire Protection.
 
-Specialist: What are your business hours?
+Specialist: To confirm, your address is 4500 Commerce Way.
 
-Client: Monday through Friday from 8 AM to 5 PM Eastern Time.
+Client: Yes, our office address is 4500 Commerce Way.
 
-Specialist: What counts as an emergency?
+Specialist: Your business hours are Monday to Friday, 8 AM to 5 PM Eastern.
 
-Client: Sprinkler leaks and fire alarm activations.
+Client: Correct, our business hours are Monday to Friday, 8 AM to 5 PM Eastern.
 
-Specialist: Where should emergency calls be routed?
+Specialist: For emergencies like sprinkler leaks and fire alarm activations?
 
-Client: Transfer to our dispatch technician.
+Client: Our emergency routing is to transfer to our dispatch technician at extension 55.
 
-Specialist: What if the technician doesn't answer?
+Specialist: What if they don't answer?
 
-Client: After 60 seconds, collect the caller's information and notify dispatch.
+Client: Set a 60 second timeout before failing over.
 
-Specialist: Any system constraints?
+Specialist: Any software constraints?
 
-Client: Yes. Never automatically create sprinkler jobs in ServiceTrade.
+Client: We have a constraint where we must not automatically create sprinkler jobs in ServiceTrade.

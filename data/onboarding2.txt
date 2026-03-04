@@ -1,19 +1,19 @@
-Implementation Specialist: Let’s confirm your HVAC call routing rules.
+Implementation Specialist: Finalizing the setup for CoolAir HVAC Services.
 
-Client: Sure.
+Client: Ready to finalize for CoolAir HVAC Services.
 
-Specialist: Business hours?
+Specialist: Address confirmed at 789 Cooling Lane.
 
-Client: Monday to Friday from 7 AM to 6 PM Central Time.
+Client: Yes, our office address is 789 Cooling Lane.
 
-Specialist: Emergency definition?
+Specialist: Business hours are Monday to Friday, 7 AM to 6 PM Central.
 
-Client: Heating failure in winter or cooling failure during extreme heat.
+Client: Correct, our business hours are Monday to Friday, 7 AM to 6 PM Central.
 
-Specialist: Emergency routing?
+Specialist: Emergency routing for heating and cooling failures?
 
-Client: Transfer directly to the on-call technician.
+Client: Our emergency routing is to transfer directly to the on-call technician at 555-0199.
 
-Specialist: Timeout?
+Specialist: How long should we wait?
 
-Client: 45 seconds before fallback.
+Client: Set a 45 second timeout before fallback.

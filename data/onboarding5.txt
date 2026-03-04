@@ -1,19 +1,23 @@
-Specialist: Let’s finalize your facility maintenance call routing.
+Sales Rep: Following up on our discovery for Apex Facility Maintenance. 
 
-Client: Okay.
+Client: Ready to finalize for Apex Facility Maintenance.
 
-Specialist: Business hours?
+Sales Rep: We've confirmed your address at 123 Industrial Way. I want to finalize the routing.
 
-Client: Monday to Friday 8 AM to 6 PM.
+Client: Right, our office address is 123 Industrial Way.
 
-Specialist: Emergency triggers?
+Sales Rep: And for the emergency routing?
 
-Client: Fire alarm activation or sprinkler flooding.
+Client: Our emergency routing is to transfer to our on-call tech at extension 101.
 
-Specialist: Emergency routing?
+Sales Rep: Our record shows business hours are Monday to Friday, 8 AM to 6 PM.
 
-Client: Transfer to the emergency technician.
+Client: Yes, our business hours are Monday to Friday, 8 AM to 6 PM.
 
-Specialist: After-hours non-emergency?
+Sales Rep: Understood. Any integration constraints?
 
-Client: Collect request details and schedule follow-up next business day.
+Client: We have an integration with ServiceTrade for our inspections.
+
+Sales Rep: How many seconds should we wait before failing over?
+
+Client: Let's do a 45 second timeout.

@@ -1,51 +1,10 @@
-Sales Rep: Hi Mark, thanks for taking the time to meet today. I’m excited to walk you through how Clara works and also understand how your team currently handles calls.
-
-Client: Sure, happy to talk. We’ve been looking for ways to improve how calls are handled, especially after hours.
-
-Sales Rep: Great. To start, could you tell me a little bit about your company and the services you provide?
-
-Client: Absolutely. We’re called Metro Fire Protection. We’ve been in business for about twelve years now. Our focus is mainly commercial fire protection systems. That includes sprinkler system installations, annual inspections, fire alarm maintenance, and extinguisher servicing. We also get a lot of service requests when systems malfunction or when building managers notice leaks or alarms.
-
-Sales Rep: That sounds like a pretty busy operation. How many calls would you say your team gets in a typical day?
-
-Client: It varies, but maybe 30 to 40 calls on an average weekday. During inspection season it can be even higher.
-
-Sales Rep: And who currently answers those calls?
-
-Client: During the day our office manager answers them. If she’s on another call or away from her desk, sometimes the call rolls over to voicemail.
-
-Sales Rep: And what happens outside of office hours?
-
-Client: After hours it goes straight to voicemail. That’s actually one of the biggest pain points we have.
-
-Sales Rep: Why is that?
-
-Client: Because sometimes emergencies happen overnight. For example, a sprinkler pipe might leak or a fire alarm might start triggering randomly. The building manager calls us, but if no one picks up immediately they get frustrated.
-
-Sales Rep: That makes sense. So what would you consider an emergency situation?
-
-Client: Definitely sprinkler leaks. If water is flowing or flooding from a pipe or sprinkler head, that's urgent. Another case is when a fire alarm panel starts going off unexpectedly.
-
-Sales Rep: And when those emergencies happen, what would you ideally want to happen?
-
-Client: Ideally the call should go directly to our dispatch technician. We always have one technician on call for emergencies.
-
-Sales Rep: Got it. And for non-emergency calls?
-
-Client: Those are usually things like inspection scheduling, maintenance requests, or extinguisher servicing appointments. Those can wait until normal business hours.
-
-Sales Rep: Speaking of that, what are your typical business hours?
-
-Client: Monday through Friday, roughly 8 AM to 5 PM.
-
-Sales Rep: Perfect. And do you use any software to manage jobs or dispatch technicians?
-
-Client: Yes, we use ServiceTrade.
-
-Sales Rep: Good to know. Sometimes companies have restrictions around automated job creation.
-
-Client: Exactly. We prefer not to automatically create sprinkler jobs in ServiceTrade. Our dispatch team reviews those manually.
-
-Sales Rep: Understood. So if Clara could answer calls, determine whether it’s an emergency or not, and route the call appropriately, that would solve most of your pain points?
-
-Client: Yes, that would actually be extremely helpful.
+Sales Rep: Hi, I'm with the automation team. I'm here to talk about Metro Fire Protection.
+Client: Our company name is Metro Fire Protection. Our office address is 4500 Commerce Way, North Plainfield.
+Sales Rep: What services do you provide?
+Client: Our services supported include sprinkler inspections, fire alarm maintenance, and extinguisher servicing.
+Sales Rep: What are your regular business hours?
+Client: Our business hours are Monday through Friday, 8 AM to 5 PM.
+Sales Rep: What do you consider an emergency?
+Client: An emergency is sprinkler leaks and fire alarm panels triggering unexpectedly.
+Sales Rep: Currently, calls after hours go to voicemail?
+Client: Yes, but we need our emergency routing to transfer to our on-call tech.

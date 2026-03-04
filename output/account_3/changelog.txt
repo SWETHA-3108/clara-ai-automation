@@ -2,13 +2,16 @@
 
 --- Values Changed ---
 - business_hours:
-    From: And business hours?
-    To:   Business hours?
+    From: Monday through Friday, from 9 AM to 5 PM
+    To:   Monday to Friday, 9 AM to 5 PM Pacific
+
+- office_address:
+    From: 202 Voltage Road, Seattle
+    To:   Address at 202 Voltage Road
 
 - emergency_definition:
-    From: Many are service requests, but occasionally we get emergency calls.
-    To:   Let’s confirm your emergency handling.
+    From: power outages in commercial buildings or exposed electrical wiring
+    To:   routing should be a transfer to the emergency line extension 9
 
 --- List Items Removed ---
-- root['questions_or_unknowns'][0]: Confirm exact business hours
-- root['questions_or_unknowns'][1]: Confirm emergency routing details
+- root['questions_or_unknowns'][0]: Confirm emergency routing details

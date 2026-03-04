@@ -2,13 +2,12 @@
 
 --- Values Changed ---
 - business_hours:
-    From: Unknown - Need to clarify
-    To:   Business hours?
+    From: 8 AM to 6 PM, Monday through Friday
+    To:   Monday to Friday, 8 AM to 6 PM
 
 - emergency_definition:
-    From: Maintenance requests, inspection bookings, and sometimes urgent building issues.
-    To:   Emergency triggers?
+    From: system
+    To:   routing is to transfer to our on-call tech at extension 101
 
 --- List Items Removed ---
-- root['questions_or_unknowns'][0]: Confirm exact business hours
-- root['questions_or_unknowns'][1]: Confirm emergency routing details
+- root['questions_or_unknowns'][0]: Confirm emergency routing details

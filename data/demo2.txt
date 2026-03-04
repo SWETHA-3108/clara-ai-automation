@@ -1,43 +1,10 @@
-Sales Rep: Hi Sarah, thanks for taking the time to chat today. I’d love to understand more about how your HVAC business currently handles incoming calls.
-
-Client: Sure. Our company is called CoolAir HVAC Services. We primarily do residential HVAC installation, repairs, and seasonal maintenance.
-
-Sales Rep: Sounds good. How many technicians do you have on the team?
-
-Client: About ten technicians currently.
-
-Sales Rep: And how are incoming customer calls handled right now?
-
-Client: During the day our receptionist answers the calls and schedules appointments.
-
-Sales Rep: And after hours?
-
-Client: That’s where things get tricky. After 6 PM the phone system switches to voicemail.
-
-Sales Rep: Do customers still call during those hours?
-
-Client: Yes, especially in the summer when air conditioners fail during heat waves.
-
-Sales Rep: I can imagine that’s stressful for customers.
-
-Client: Definitely. Sometimes people leave urgent messages saying their AC stopped working and their house is extremely hot.
-
-Sales Rep: And how does your team respond to those calls?
-
-Client: Our on-call technician checks voicemail periodically and calls back.
-
-Sales Rep: Would you prefer those calls to be routed directly?
-
-Client: Yes. Ideally if it's an emergency, the call should be transferred to the on-call technician immediately.
-
-Sales Rep: What would count as an emergency for your business?
-
-Client: Heating failures in winter or cooling failures during extreme heat.
-
-Sales Rep: And non-emergency calls?
-
-Client: Those could just be recorded and scheduled for the next business day.
-
-Sales Rep: And your business hours?
-
-Client: Monday through Friday, 7 AM to 6 PM.
+Sales Rep: Hi, I'm here to discuss CoolAir HVAC Services.
+Client: Our company name is CoolAir HVAC Services. Our office address is 789 Cooling Lane, Dallas, Texas.
+Sales Rep: What specific HVAC services do you offer?
+Client: Our services supported include residential HVAC installation, emergency repairs, and seasonal maintenance.
+Sales Rep: What are your office hours?
+Client: Our business hours are Monday through Friday, 7 AM to 6 PM.
+Sales Rep: And what counts as an emergency for you?
+Client: An emergency is heating failures in winter or cooling failures during heat waves.
+Sales Rep: After hours, calls just go to voicemail currently?
+Client: Yes, but we want our emergency routing to transfer to the on-call technician immediately.

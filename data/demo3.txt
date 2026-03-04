@@ -1,27 +1,10 @@
-Sales Rep: Could you describe the services your company offers?
-
-Client: We’re BrightLine Electrical Contractors. We mostly work with commercial properties. We do installations, inspections, and electrical repairs.
-
-Sales Rep: How are incoming calls handled right now?
-
-Client: During the day our office manager answers them.
-
-Sales Rep: And after hours?
-
-Client: They go to voicemail.
-
-Sales Rep: What kinds of calls do you get?
-
-Client: Many are service requests, but occasionally we get emergency calls.
-
-Sales Rep: What kind of emergencies?
-
-Client: Power outages in commercial buildings or exposed electrical wiring.
-
-Sales Rep: What would you want the AI system to do in those cases?
-
-Client: If it’s clearly an emergency, transfer the call to our emergency line.
-
-Sales Rep: And business hours?
-
-Client: Monday through Friday, 9 AM to 5 PM.
+Sales Rep: Tell me about BrightLine Electrical Contractors.
+Client: Our company name is BrightLine Electrical Contractors. Our office address is 202 Voltage Road, Seattle.
+Sales Rep: What services do you provide?
+Client: Our services supported include commercial installations, safety inspections, and electrical repairs.
+Sales Rep: What are your business hours?
+Client: Our business hours are Monday through Friday, from 9 AM to 5 PM.
+Sales Rep: What is an emergency in your field?
+Client: An emergency is power outages in commercial buildings or exposed electrical wiring.
+Sales Rep: How should the AI handle these?
+Client: Our emergency routing is to transfer emergency calls directly to our supervisor line.

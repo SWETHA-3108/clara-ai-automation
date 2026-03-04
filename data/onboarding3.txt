@@ -1,19 +1,15 @@
-Specialist: Let’s confirm your emergency handling.
+Specialist: Finalizing for BrightLine Electrical Contractors.
 
-Client: Sure.
+Client: Ready to finalize for BrightLine Electrical Contractors.
 
-Specialist: Business hours?
+Specialist: Address at 202 Voltage Road. Business hours are Monday to Friday, 9 AM to 5 PM Pacific.
 
-Client: Monday to Friday 9 AM to 5 PM Pacific Time.
+Client: Correct, our office address is 202 Voltage Road and our business hours are Monday to Friday, 9 AM to 5 PM Pacific.
 
-Specialist: Emergency cases?
+Specialist: Emergency routing for power outages and exposed wiring?
 
-Client: Power outages and exposed wiring.
+Client: Our emergency routing should be a transfer to the emergency line extension 9.
 
-Specialist: Emergency routing?
+Specialist: If no answer?
 
-Client: Transfer to the emergency line.
-
-Specialist: Fallback?
-
-Client: Collect details and notify the technician.
+Client: Collect details as a fallback and notify the tech.

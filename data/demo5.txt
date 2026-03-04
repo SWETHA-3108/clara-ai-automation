@@ -1,19 +1,10 @@
-Sales Rep: Could you tell me a bit about Apex Facility Maintenance?
-
-Client: Sure. We provide general facility maintenance services for commercial properties.
-
-Sales Rep: What types of calls do you receive?
-
-Client: Maintenance requests, inspection bookings, and sometimes urgent building issues.
-
-Sales Rep: What would count as urgent?
-
-Client: Fire alarms triggering or sprinkler flooding.
-
+Sales Rep: Hi, I'm with the automation team. I'm here to talk about Apex Facility Maintenance.
+Client: Our company name is Apex Facility Maintenance. Our office address is 123 Industrial Way, Suite 500, North Plainfield.
+Sales Rep: Perfect. What types of calls do you usually receive?
+Client: Our services supported include facility maintenance, maintenance requests and inspection bookings.
+Sales Rep: What are your current business hours?
+Client: Our business hours are 8 AM to 6 PM, Monday through Friday.
 Sales Rep: How are calls handled after hours?
-
-Client: Currently they go to voicemail.
-
-Sales Rep: Would routing emergencies directly help?
-
-Client: Yes that would make things much easier.
+Client: Currently they go to voicemail, but we need an emergency system.
+Sales Rep: Would routing emergencies directly to a technician help?
+Client: Yes, an emergency appears to be fire alarms or flooding.

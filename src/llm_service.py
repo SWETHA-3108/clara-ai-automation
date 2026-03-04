@@ -34,25 +34,77 @@ class MockLLMService:
 
     # Helper function to extract specific lines from transcripts
     def _extract_value(self, text: str, keywords: list[str], fallback: str) -> str:
-        for line in text.split("\n"):
-            if any(kw.lower() in line.lower() for kw in keywords):
-                clean_line = line.split(":", 1)[-1].strip() if ":" in line else line.strip()
-                return clean_line
+        lines = text.split("\n")
+        # Multi-pass approach to prioritize Client answers and clean data
+        for line in lines:
+            ll = line.lower()
+            if not ll.startswith("client:"):
+                continue
+            
+            for kw in keywords:
+                kw_l = kw.lower()
+                if kw_l in ll:
+                    # Capture everything after the keyword
+                    idx = ll.find(kw_l)
+                    content = line[idx + len(kw):].strip()
+                    
+                    # Intensive cleaning loop
+                    content = content.lstrip(": -").strip()
+                    unwanted = ["is ", "are ", "located at ", "at ", "specifically ", "about ", "include ", "our ", "confirmed ", "identified ", "triggers ", "firm ", "called "]
+                    for _ in range(3): # Iterative strip
+                        for u in unwanted:
+                            if content.lower().startswith(u):
+                                content = content[len(u):].strip()
+                    
+                    if content and not content.endswith("?") and "?" not in content:
+                        # Success: take only the first sentence/phrase
+                        result = content.split(". ")[0].split("! ")[0].split(", and ")[0].rstrip(".?!")
+                        if len(result) > 2: # Ignore noise
+                            return result
+
+        # Fallback to non-SalesRep lines if no Client answer found
+        for line in lines:
+            ll = line.lower()
+            if ll.startswith("sales rep:") or ll.startswith("salesperson:"):
+                continue
+            for kw in keywords:
+                kw_l = kw.lower()
+                if kw_l in ll:
+                    parts = line.split(":", 1)
+                    content = parts[-1].strip() if len(parts) > 1 else line.strip()
+                    content = content.lstrip(": -").strip()
+                    if content and not content.endswith("?") and "?" not in content:
+                         # Simple filter for fallback
+                         return content.split(". ")[0].split("! ")[0].rstrip(".?!")
         return fallback
 
-    # Extracts initial data from demo session
     def extract_demo_v1(self, text: str, account_id: str) -> tuple[AccountMemo, AgentSpec]:
-        company_name = self._extract_value(text, ["called", "name is", "company is"], f"Account {account_id}")
-        business_hours = self._extract_value(text, ["business hours", "open from", "office hours"], "Unknown - Need to clarify")
+        # Refined keyword search
+        company_name = self._extract_value(text, ["about", "company is", "name is", "we're ", "we are ", "owner of "], f"Account {account_id}")
+        business_hours = self._extract_value(text, ["business hours", "open from", "office hours", "hours are"], "Unknown - Need to clarify")
+        office_address = self._extract_value(text, ["address at", "located at", "setup at", "address is"], None)
         emergency_def = self._extract_value(text, ["emergency", "urgent"], "To be defined during onboarding")
         
+        # Simple heuristic for services
+        services = []
+        if "maintenance" in text.lower(): services.append("Facility Maintenance")
+        if "inspection" in text.lower(): services.append("Inspections")
+        if not services: services = ["Service Requests"]
+
+        # Prepare questions list
+        questions = []
+        if "Unknown" in business_hours:
+            questions.append("Confirm exact business hours")
+        questions.append("Confirm emergency routing details")
+
         memo = AccountMemo(
             account_id=account_id,
             company_name=company_name,
             business_hours=business_hours,
-            services_supported=["Service Requests", "Inspections"],
+            office_address=office_address,
+            services_supported=services,
             emergency_definition=emergency_def,
-            questions_or_unknowns=["Confirm exact business hours", "Confirm emergency routing details"]
+            questions_or_unknowns=questions
         )
         
         spec = AgentSpec(
@@ -67,16 +119,16 @@ class MockLLMService:
         
         return memo, spec
 
-    # Refines data during onboarding session
     def extract_onboarding_v2(self, text: str, current_memo: AccountMemo, current_spec: AgentSpec) -> tuple[AccountMemo, AgentSpec]:
         new_memo = current_memo.model_copy()
         
-        # Update fields with onboarding details
+        # Update fields with improved heuristics
         new_memo.business_hours = self._extract_value(text, ["business hours", "hours are"], current_memo.business_hours)
+        new_memo.office_address = self._extract_value(text, ["address at", "located at"], current_memo.office_address)
         new_memo.emergency_definition = self._extract_value(text, ["emergency"], current_memo.emergency_definition)
         new_memo.emergency_routing_rules = self._extract_value(text, ["routed", "transfer to"], "Direct to on-call technician")
         new_memo.call_transfer_rules = self._extract_value(text, ["seconds", "timeout"], "45 seconds before fallback")
-        new_memo.integration_constraints = self._extract_value(text, ["ServiceTrade", "constraint"], "None mentioned")
+        new_memo.integration_constraints = self._extract_value(text, ["ServiceTrade", "integration"], "None mentioned")
         
         new_memo.after_hours_flow_summary = "Emergencies go to on-call. Everything else is a message."
         new_memo.questions_or_unknowns = []

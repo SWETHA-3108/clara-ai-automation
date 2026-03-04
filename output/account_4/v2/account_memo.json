@@ -1,16 +1,15 @@
 {
     "account_id": "account_4",
-    "company_name": "Account account_4",
-    "business_hours": "Business hours?",
-    "office_address": null,
+    "company_name": "AquaGuard Sprinklers",
+    "business_hours": "Monday to Friday, 8 AM to 4 PM Eastern",
+    "office_address": "505 Flow Street, Orlando",
     "services_supported": [
-        "Service Requests",
         "Inspections"
     ],
-    "emergency_definition": "Emergency triggers?",
-    "emergency_routing_rules": "Transfer to on-call technician.",
+    "emergency_definition": "routing is to transfer to on-call technician at 555-0200",
+    "emergency_routing_rules": "on-call technician at 555-0200",
     "non_emergency_routing_rules": null,
-    "call_transfer_rules": "Timeout?",
+    "call_transfer_rules": "before fallback",
     "integration_constraints": "None mentioned",
     "after_hours_flow_summary": "Emergencies go to on-call. Everything else is a message.",
     "office_hours_flow_summary": null,

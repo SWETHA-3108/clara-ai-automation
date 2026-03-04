@@ -1,13 +1,12 @@
 {
     "account_id": "account_2",
-    "company_name": "Sure. Our company is called CoolAir HVAC Services. We primarily do residential HVAC installation, repairs, and seasonal maintenance.",
-    "business_hours": "And your business hours?",
-    "office_address": null,
+    "company_name": "CoolAir HVAC Services",
+    "business_hours": "Monday through Friday, 7 AM to 6 PM",
+    "office_address": "789 Cooling Lane, Dallas, Texas",
     "services_supported": [
-        "Service Requests",
-        "Inspections"
+        "Facility Maintenance"
     ],
-    "emergency_definition": "Definitely. Sometimes people leave urgent messages saying their AC stopped working and their house is extremely hot.",
+    "emergency_definition": "repairs",
     "emergency_routing_rules": null,
     "non_emergency_routing_rules": null,
     "call_transfer_rules": null,
@@ -15,7 +14,6 @@
     "after_hours_flow_summary": null,
     "office_hours_flow_summary": null,
     "questions_or_unknowns": [
-        "Confirm exact business hours",
         "Confirm emergency routing details"
     ],
     "notes": null

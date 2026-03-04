@@ -1,19 +1,10 @@
-Sales Rep: Tell me about the types of services your company provides.
-
-Client: We focus on sprinkler system inspections and repairs for commercial buildings.
-
-Sales Rep: How are calls currently handled?
-
-Client: During the day our office staff answers them.
-
-Sales Rep: And after hours?
-
-Client: Calls go to voicemail.
-
-Sales Rep: What types of emergencies do you receive?
-
-Client: Sprinkler leaks or pressure failures in sprinkler lines.
-
-Sales Rep: Would you want emergency calls routed to a technician?
-
-Client: Yes, we always have a technician on call.
+Sales Rep: Let's discuss AquaGuard Sprinklers.
+Client: Our company name is AquaGuard Sprinklers. Our office address is 505 Flow Street, Orlando.
+Sales Rep: What services do you offer?
+Client: Our services supported include professional sprinkler system inspections and emergency repairs.
+Sales Rep: What are your operating hours?
+Client: Our business hours are Monday through Friday, 8 AM to 4 PM.
+Sales Rep: What constitutes an emergency?
+Client: An emergency is sprinkler leaks or major pressure failures.
+Sales Rep: Currently calls go to voicemail after hours?
+Client: Yes, we need our emergency routing to transfer to our on-call technician.

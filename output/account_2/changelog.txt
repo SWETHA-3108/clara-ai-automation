@@ -2,13 +2,12 @@
 
 --- Values Changed ---
 - business_hours:
-    From: And your business hours?
-    To:   Business hours?
+    From: Monday through Friday, 7 AM to 6 PM
+    To:   Monday to Friday, 7 AM to 6 PM Central
 
 - emergency_definition:
-    From: Definitely. Sometimes people leave urgent messages saying their AC stopped working and their house is extremely hot.
-    To:   Emergency definition?
+    From: repairs
+    To:   routing is to transfer directly to the on-call technician at 555-0199
 
 --- List Items Removed ---
-- root['questions_or_unknowns'][0]: Confirm exact business hours
-- root['questions_or_unknowns'][1]: Confirm emergency routing details
+- root['questions_or_unknowns'][0]: Confirm emergency routing details

@@ -1,19 +1,15 @@
-Specialist: Let’s confirm the sprinkler system rules.
+Specialist: Confirming for AquaGuard Sprinklers.
 
-Client: Okay.
+Client: Ready to confirm for AquaGuard Sprinklers.
 
-Specialist: Business hours?
+Specialist: Address is 505 Flow Street. Hours are Monday to Friday, 8 AM to 4 PM Eastern.
 
-Client: Monday to Friday 8 AM to 4 PM Eastern.
+Client: Correct, our office address is 505 Flow Street and our business hours are Monday to Friday, 8 AM to 4 PM Eastern.
 
-Specialist: Emergency triggers?
+Specialist: Emergency routing for leaks and pressure failures?
 
-Client: Sprinkler leaks or pressure failures.
-
-Specialist: Routing?
-
-Client: Transfer to on-call technician.
+Client: Our emergency routing is to transfer to on-call technician at 555-0200.
 
 Specialist: Timeout?
 
-Client: 60 seconds.
+Client: Set a 60 second timeout before fallback.
