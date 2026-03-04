@@ -1,0 +1,14 @@
+=== CHANGELOG (v1 -> v2) ===
+
+--- Values Changed ---
+- business_hours:
+    From: And what happens outside of office hours?
+    To:   What are your business hours?
+
+- emergency_definition:
+    From: That makes sense. So what would you consider an emergency situation?
+    To:   What counts as an emergency?
+
+--- List Items Removed ---
+- root['questions_or_unknowns'][0]: Confirm exact business hours
+- root['questions_or_unknowns'][1]: Confirm emergency routing details

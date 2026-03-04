@@ -1,0 +1,19 @@
+Specialist: Let’s confirm your emergency handling.
+
+Client: Sure.
+
+Specialist: Business hours?
+
+Client: Monday to Friday 9 AM to 5 PM Pacific Time.
+
+Specialist: Emergency cases?
+
+Client: Power outages and exposed wiring.
+
+Specialist: Emergency routing?
+
+Client: Transfer to the emergency line.
+
+Specialist: Fallback?
+
+Client: Collect details and notify the technician.

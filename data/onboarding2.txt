@@ -1,0 +1,19 @@
+Implementation Specialist: Let’s confirm your HVAC call routing rules.
+
+Client: Sure.
+
+Specialist: Business hours?
+
+Client: Monday to Friday from 7 AM to 6 PM Central Time.
+
+Specialist: Emergency definition?
+
+Client: Heating failure in winter or cooling failure during extreme heat.
+
+Specialist: Emergency routing?
+
+Client: Transfer directly to the on-call technician.
+
+Specialist: Timeout?
+
+Client: 45 seconds before fallback.

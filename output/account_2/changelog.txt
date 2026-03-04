@@ -1,0 +1,14 @@
+=== CHANGELOG (v1 -> v2) ===
+
+--- Values Changed ---
+- business_hours:
+    From: And your business hours?
+    To:   Business hours?
+
+- emergency_definition:
+    From: Definitely. Sometimes people leave urgent messages saying their AC stopped working and their house is extremely hot.
+    To:   Emergency definition?
+
+--- List Items Removed ---
+- root['questions_or_unknowns'][0]: Confirm exact business hours
+- root['questions_or_unknowns'][1]: Confirm emergency routing details

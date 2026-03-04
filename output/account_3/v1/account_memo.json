@@ -1,0 +1,22 @@
+{
+    "account_id": "account_3",
+    "company_name": "Account account_3",
+    "business_hours": "And business hours?",
+    "office_address": null,
+    "services_supported": [
+        "Service Requests",
+        "Inspections"
+    ],
+    "emergency_definition": "Many are service requests, but occasionally we get emergency calls.",
+    "emergency_routing_rules": null,
+    "non_emergency_routing_rules": null,
+    "call_transfer_rules": null,
+    "integration_constraints": null,
+    "after_hours_flow_summary": null,
+    "office_hours_flow_summary": null,
+    "questions_or_unknowns": [
+        "Confirm exact business hours",
+        "Confirm emergency routing details"
+    ],
+    "notes": null
+}

@@ -1,0 +1,22 @@
+{
+    "account_id": "account_1",
+    "company_name": "Absolutely. We\u2019re called Metro Fire Protection. We\u2019ve been in business for about twelve years now. Our focus is mainly commercial fire protection systems. That includes sprinkler system installations, annual inspections, fire alarm maintenance, and extinguisher servicing. We also get a lot of service requests when systems malfunction or when building managers notice leaks or alarms.",
+    "business_hours": "And what happens outside of office hours?",
+    "office_address": null,
+    "services_supported": [
+        "Service Requests",
+        "Inspections"
+    ],
+    "emergency_definition": "That makes sense. So what would you consider an emergency situation?",
+    "emergency_routing_rules": null,
+    "non_emergency_routing_rules": null,
+    "call_transfer_rules": null,
+    "integration_constraints": null,
+    "after_hours_flow_summary": null,
+    "office_hours_flow_summary": null,
+    "questions_or_unknowns": [
+        "Confirm exact business hours",
+        "Confirm emergency routing details"
+    ],
+    "notes": null
+}

@@ -1,0 +1,68 @@
+{
+  "name": "Clara Zero-Cost AI Automation Pipeline",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "1",
+      "name": "On Call Upload or Trigger",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        250,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "command": "python main.py --account-id {{$json.accountId}} --type {{$json.callType}} --file {{$json.filePath}}"
+      },
+      "id": "2",
+      "name": "Execute Local Python Processor",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        450,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "content": "File saved successfully at output/{{$json.accountId}}/{{$json.callType == 'demo' ? 'v1' : 'v2'}}/"
+      },
+      "id": "3",
+      "name": "Slack Notification (Optional)",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 1,
+      "position": [
+        650,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "On Call Upload or Trigger": {
+      "main": [
+        [
+          {
+            "node": "Execute Local Python Processor",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Execute Local Python Processor": {
+      "main": [
+        [
+          {
+            "node": "Slack Notification (Optional)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {}
+}

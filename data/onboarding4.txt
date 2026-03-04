@@ -1,0 +1,19 @@
+Specialist: Let’s confirm the sprinkler system rules.
+
+Client: Okay.
+
+Specialist: Business hours?
+
+Client: Monday to Friday 8 AM to 4 PM Eastern.
+
+Specialist: Emergency triggers?
+
+Client: Sprinkler leaks or pressure failures.
+
+Specialist: Routing?
+
+Client: Transfer to on-call technician.
+
+Specialist: Timeout?
+
+Client: 60 seconds.

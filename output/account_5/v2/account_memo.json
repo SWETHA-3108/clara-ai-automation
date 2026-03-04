@@ -1,0 +1,19 @@
+{
+    "account_id": "account_5",
+    "company_name": "Account account_5",
+    "business_hours": "Business hours?",
+    "office_address": null,
+    "services_supported": [
+        "Service Requests",
+        "Inspections"
+    ],
+    "emergency_definition": "Emergency triggers?",
+    "emergency_routing_rules": "Transfer to the emergency technician.",
+    "non_emergency_routing_rules": null,
+    "call_transfer_rules": "45 seconds before fallback",
+    "integration_constraints": "None mentioned",
+    "after_hours_flow_summary": "Emergencies go to on-call. Everything else is a message.",
+    "office_hours_flow_summary": null,
+    "questions_or_unknowns": [],
+    "notes": null
+}

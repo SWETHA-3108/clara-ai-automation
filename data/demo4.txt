@@ -1,0 +1,19 @@
+Sales Rep: Tell me about the types of services your company provides.
+
+Client: We focus on sprinkler system inspections and repairs for commercial buildings.
+
+Sales Rep: How are calls currently handled?
+
+Client: During the day our office staff answers them.
+
+Sales Rep: And after hours?
+
+Client: Calls go to voicemail.
+
+Sales Rep: What types of emergencies do you receive?
+
+Client: Sprinkler leaks or pressure failures in sprinkler lines.
+
+Sales Rep: Would you want emergency calls routed to a technician?
+
+Client: Yes, we always have a technician on call.

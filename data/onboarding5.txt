@@ -1,0 +1,19 @@
+Specialist: Let’s finalize your facility maintenance call routing.
+
+Client: Okay.
+
+Specialist: Business hours?
+
+Client: Monday to Friday 8 AM to 6 PM.
+
+Specialist: Emergency triggers?
+
+Client: Fire alarm activation or sprinkler flooding.
+
+Specialist: Emergency routing?
+
+Client: Transfer to the emergency technician.
+
+Specialist: After-hours non-emergency?
+
+Client: Collect request details and schedule follow-up next business day.

@@ -1,0 +1,19 @@
+Sales Rep: Could you tell me a bit about Apex Facility Maintenance?
+
+Client: Sure. We provide general facility maintenance services for commercial properties.
+
+Sales Rep: What types of calls do you receive?
+
+Client: Maintenance requests, inspection bookings, and sometimes urgent building issues.
+
+Sales Rep: What would count as urgent?
+
+Client: Fire alarms triggering or sprinkler flooding.
+
+Sales Rep: How are calls handled after hours?
+
+Client: Currently they go to voicemail.
+
+Sales Rep: Would routing emergencies directly help?
+
+Client: Yes that would make things much easier.

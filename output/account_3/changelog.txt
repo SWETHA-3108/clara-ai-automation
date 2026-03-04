@@ -1,0 +1,14 @@
+=== CHANGELOG (v1 -> v2) ===
+
+--- Values Changed ---
+- business_hours:
+    From: And business hours?
+    To:   Business hours?
+
+- emergency_definition:
+    From: Many are service requests, but occasionally we get emergency calls.
+    To:   Let’s confirm your emergency handling.
+
+--- List Items Removed ---
+- root['questions_or_unknowns'][0]: Confirm exact business hours
+- root['questions_or_unknowns'][1]: Confirm emergency routing details

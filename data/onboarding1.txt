@@ -1,0 +1,23 @@
+Implementation Specialist: Thanks for joining the onboarding session. Let’s finalize your configuration.
+
+Client: Sounds good.
+
+Specialist: What are your business hours?
+
+Client: Monday through Friday from 8 AM to 5 PM Eastern Time.
+
+Specialist: What counts as an emergency?
+
+Client: Sprinkler leaks and fire alarm activations.
+
+Specialist: Where should emergency calls be routed?
+
+Client: Transfer to our dispatch technician.
+
+Specialist: What if the technician doesn't answer?
+
+Client: After 60 seconds, collect the caller's information and notify dispatch.
+
+Specialist: Any system constraints?
+
+Client: Yes. Never automatically create sprinkler jobs in ServiceTrade.
